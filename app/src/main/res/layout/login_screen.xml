@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/splashBackground"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:src="@drawable/chattericon"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name" />
+
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="155dp"
+        android:textStyle="italic"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff15"
+        android:text="Login"
+        android:textSize="30sp"
+        android:layout_marginLeft="60dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="Enter your Email"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#ff15"
+        android:text=""
+        tools:ignore="TextFields"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:textColorHint="#ff15"
+        android:hint="Enter your Password"
+        android:text=""
+        tools:ignore="TextFields"
+        />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="italic"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff15"
+        android:text="OR"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Signup"/>
+</LinearLayout>
